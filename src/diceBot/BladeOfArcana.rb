@@ -15,13 +15,11 @@ class BladeOfArcana < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'ブレイド・オブ・アルカナ'
-  end
+  # ゲームシステム名
+  NAME = 'ブレイド・オブ・アルカナ'
 
-  def gameType
-    "BladeOfArcana"
-  end
+  # ダイスボットの識別子
+  ID = 'BladeOfArcana'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -10,13 +10,11 @@ class LostRoyal < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'ロストロイヤル'
-  end
+  # ゲームシステム名
+  NAME = 'ロストロイヤル'
 
-  def gameType
-    "LostRoyal"
-  end
+  # ダイスボットの識別子
+  ID = 'LostRoyal'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

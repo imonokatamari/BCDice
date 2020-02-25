@@ -5,13 +5,11 @@ class BlindMythos < DiceBot
     super
   end
 
-  def gameName
-    'ブラインド・ミトス'
-  end
+  # ゲームシステム名
+  NAME = 'ブラインド・ミトス'
 
-  def gameType
-    "BlindMythos"
-  end
+  # ダイスボットの識別子
+  ID = 'BlindMythos'
 
   def getHelpMessage
     return <<MESSAGETEXT

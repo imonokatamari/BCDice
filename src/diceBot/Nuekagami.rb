@@ -5,13 +5,11 @@ class Nuekagami < DiceBot
     super
   end
 
-  def gameName
-    '鵺鏡'
-  end
+  # ゲームシステム名
+  NAME = '鵺鏡'
 
-  def gameType
-    "Nuekagami"
-  end
+  # ダイスボットの識別子
+  ID = 'Nuekagami'
 
   def getHelpMessage
     return <<MESSAGETEXT

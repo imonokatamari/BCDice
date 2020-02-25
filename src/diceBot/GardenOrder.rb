@@ -6,13 +6,11 @@ class GardenOrder < DiceBot
     'DC(SL|BL|IM|BR|RF|EL).+'
   ])
 
-  def gameName
-    'ガーデンオーダー'
-  end
+  # ゲームシステム名
+  NAME = 'ガーデンオーダー'
 
-  def gameType
-    "GardenOrder"
-  end
+  # ダイスボットの識別子
+  ID = 'GardenOrder'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

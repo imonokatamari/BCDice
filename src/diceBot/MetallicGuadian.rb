@@ -13,13 +13,12 @@ class MetallicGuadian < SRS
 
   # ゲームシステム名を返す
   # @return [String]
-  def gameName
-    'メタリックガーディアン'
-  end
+  # ゲームシステム名
+  NAME = 'メタリックガーディアン'
 
   # ゲームシステム識別子を返す
   # @return [String]
-  def gameType
-    "MetallicGuadian"
-  end
+  # ダイスボットの識別子
+  ID = 'MetallicGuadian'
+
 end

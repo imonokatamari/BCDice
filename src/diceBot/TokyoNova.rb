@@ -5,13 +5,11 @@ class TokyoNova < DiceBot
     super
   end
 
-  def gameName
-    'トーキョーＮ◎ＶＡ'
-  end
+  # ゲームシステム名
+  NAME = 'トーキョーＮ◎ＶＡ'
 
-  def gameType
-    "TokyoNova"
-  end
+  # ダイスボットの識別子
+  ID = 'TokyoNova'
 
   def getHelpMessage
     return <<MESSAGETEXT

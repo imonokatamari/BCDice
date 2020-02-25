@@ -3,9 +3,8 @@
 class Chill < DiceBot
   setPrefixes(['SR\d+.*'])
 
-  def gameType
-    "Chill"
-  end
+  # ダイスボットの識別子
+  ID = 'Chill'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

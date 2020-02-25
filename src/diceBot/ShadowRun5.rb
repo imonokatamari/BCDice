@@ -12,13 +12,11 @@ class ShadowRun5 < ShadowRun4
     @defaultSuccessTarget = ">=5" # 目標値が空欄の時の目標値
   end
 
-  def gameName
-    'シャドウラン第５版'
-  end
+  # ゲームシステム名
+  NAME = 'シャドウラン第５版'
 
-  def gameType
-    "ShadowRun5"
-  end
+  # ダイスボットの識別子
+  ID = 'ShadowRun5'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -8,13 +8,11 @@ class DeadlineHeroes < DiceBot
     'HNC'
   ])
 
-  def gameName
-    'デッドラインヒーローズ'
-  end
+  # ゲームシステム名
+  NAME = 'デッドラインヒーローズ'
 
-  def gameType
-    "DeadlineHeroes"
-  end
+  # ダイスボットの識別子
+  ID = 'DeadlineHeroes'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

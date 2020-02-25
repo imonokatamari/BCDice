@@ -7,13 +7,11 @@ class DarkSouls < DiceBot
     super
   end
 
-  def gameName
-    'ダークソウルTRPG'
-  end
+  # ゲームシステム名
+  NAME = 'ダークソウルTRPG'
 
-  def gameType
-    "DarkSouls"
-  end
+  # ダイスボットの識別子
+  ID = 'DarkSouls'
 
   def getHelpMessage
     return <<MESSAGETEXT

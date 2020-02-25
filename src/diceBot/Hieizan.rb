@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class Hieizan < DiceBot
-  def gameName
-    '比叡山炎上'
-  end
+  # ゲームシステム名
+  NAME = '比叡山炎上'
 
-  def gameType
-    "Hieizan"
-  end
+  # ダイスボットの識別子
+  ID = 'Hieizan'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -98,13 +98,11 @@ class BeginningIdol < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ビギニングアイドル'
-  end
+  # ゲームシステム名
+  NAME = 'ビギニングアイドル'
 
-  def gameType
-    "BeginningIdol"
-  end
+  # ダイスボットの識別子
+  ID = 'BeginningIdol'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

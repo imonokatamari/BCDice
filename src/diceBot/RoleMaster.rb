@@ -7,13 +7,11 @@ class RoleMaster < DiceBot
     @unlimitedRollDiceType = 100
   end
 
-  def gameName
-    'ロールマスター'
-  end
+  # ゲームシステム名
+  NAME = 'ロールマスター'
 
-  def gameType
-    "RoleMaster"
-  end
+  # ダイスボットの識別子
+  ID = 'RoleMaster'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

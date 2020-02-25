@@ -6,13 +6,11 @@ class Dracurouge < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'ドラクルージュ'
-  end
+  # ゲームシステム名
+  NAME = 'ドラクルージュ'
 
-  def gameType
-    "Dracurouge"
-  end
+  # ダイスボットの識別子
+  ID = 'Dracurouge'
 
   def getHelpMessage
     return <<MESSAGETEXT

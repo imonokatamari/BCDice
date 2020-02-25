@@ -10,13 +10,11 @@ class Nechronica < DiceBot
     @defaultSuccessTarget = "6" # 目標値が空欄の時の目標値
   end
 
-  def gameName
-    'ネクロニカ'
-  end
+  # ゲームシステム名
+  NAME = 'ネクロニカ'
 
-  def gameType
-    "Nechronica"
-  end
+  # ダイスボットの識別子
+  ID = 'Nechronica'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

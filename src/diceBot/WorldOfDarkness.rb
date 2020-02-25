@@ -10,13 +10,11 @@ class WorldOfDarkness < DiceBot
     @rerollDice = 0
   end
 
-  def gameName
-    'ワールドオブダークネス'
-  end
+  # ゲームシステム名
+  NAME = 'ワールドオブダークネス'
 
-  def gameType
-    "WorldOfDarkness"
-  end
+  # ダイスボットの識別子
+  ID = 'WorldOfDarkness'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

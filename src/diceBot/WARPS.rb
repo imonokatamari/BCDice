@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class WARPS < DiceBot
-  def gameName
-    'ワープス'
-  end
+  # ゲームシステム名
+  NAME = 'ワープス'
 
-  def gameType
-    "WARPS"
-  end
+  # ダイスボットの識別子
+  ID = 'WARPS'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

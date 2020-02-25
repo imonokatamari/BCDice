@@ -10,13 +10,11 @@ class Satasupe < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'サタスペ'
-  end
+  # ゲームシステム名
+  NAME = 'サタスペ'
 
-  def gameType
-    "Satasupe"
-  end
+  # ダイスボットの識別子
+  ID = 'Satasupe'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

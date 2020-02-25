@@ -4,14 +4,12 @@ class HouraiGakuen < DiceBot
   setPrefixes(['ROL.*', 'MED\(\d+,\d+\)', 'RES\(\d+,\d+\)', 'INY.*', 'HTK.*', 'GOG.*'])
 
   # ゲームの名前
-  def gameName
-    '蓬莱学園の冒険!!'
-  end
+  # ゲームシステム名
+  NAME = '蓬莱学園の冒険!!'
 
   # チャット欄表示名
-  def gameType
-    "HouraiGakuen"
-  end
+  # ダイスボットの識別子
+  ID = 'HouraiGakuen'
 
   # 判定用前置文字
   # 説明文

@@ -9,13 +9,11 @@ class GehennaAn < DiceBot
     @sortType = 3
   end
 
-  def gameName
-    'ゲヘナ・アナスタシス'
-  end
+  # ゲームシステム名
+  NAME = 'ゲヘナ・アナスタシス'
 
-  def gameType
-    "GehennaAn"
-  end
+  # ダイスボットの識別子
+  ID = 'GehennaAn'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

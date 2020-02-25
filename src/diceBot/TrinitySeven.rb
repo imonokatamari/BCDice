@@ -7,13 +7,11 @@ class TrinitySeven < DiceBot
     super
   end
 
-  def gameName
-    'トリニティセブンRPG'
-  end
+  # ゲームシステム名
+  NAME = 'トリニティセブンRPG'
 
-  def gameType
-    "TrinitySeven"
-  end
+  # ダイスボットの識別子
+  ID = 'TrinitySeven'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -5,13 +5,11 @@ class DungeonsAndDoragons < DiceBot
     super
   end
 
-  def gameName
-    'ダンジョンズ＆ドラゴンズ'
-  end
+  # ゲームシステム名
+  NAME = 'ダンジョンズ＆ドラゴンズ'
 
-  def gameType
-    "DungeonsAndDoragons"
-  end
+  # ダイスボットの識別子
+  ID = 'DungeonsAndDoragons'
 
   def getHelpMessage
     return <<MESSAGETEXT

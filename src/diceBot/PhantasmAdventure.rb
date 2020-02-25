@@ -6,13 +6,11 @@ class PhantasmAdventure < DiceBot
     @sendMode = 2
   end
 
-  def gameName
-    'ファンタズムアドベンチャー'
-  end
+  # ゲームシステム名
+  NAME = 'ファンタズムアドベンチャー'
 
-  def gameType
-    "PhantasmAdventure"
-  end
+  # ダイスボットの識別子
+  ID = 'PhantasmAdventure'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

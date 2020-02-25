@@ -6,13 +6,11 @@ class OneWayHeroics < DiceBot
     @d66Type = 2 # d66の差し替え(0=D66無し, 1=順番そのまま([5,3]->53), 2=昇順入れ替え([5,3]->35)
   end
 
-  def gameName
-    '片道勇者'
-  end
+  # ゲームシステム名
+  NAME = '片道勇者'
 
-  def gameType
-    "OneWayHeroics"
-  end
+  # ダイスボットの識別子
+  ID = 'OneWayHeroics'
 
   def getHelpMessage
     return <<MESSAGETEXT

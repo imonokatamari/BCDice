@@ -11,13 +11,11 @@ class StrangerOfSwordCity < DiceBot
     @fractionType = "omit"
   end
 
-  def gameName
-    '剣の街の異邦人TRPG'
-  end
+  # ゲームシステム名
+  NAME = '剣の街の異邦人TRPG'
 
-  def gameType
-    "StrangerOfSwordCity"
-  end
+  # ダイスボットの識別子
+  ID = 'StrangerOfSwordCity'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

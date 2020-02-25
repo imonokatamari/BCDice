@@ -11,13 +11,11 @@ class SwordWorld2_0 < SwordWorld
     @rating_table = rating_table
   end
 
-  def gameName
-    'ソードワールド2.0'
-  end
+  # ゲームシステム名
+  NAME = 'ソードワールド2.0'
 
-  def gameType
-    return "SwordWorld2.0"
-  end
+  # ダイスボットの識別子
+  ID = 'SwordWorld2.0'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

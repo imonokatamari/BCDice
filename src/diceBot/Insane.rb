@@ -13,13 +13,11 @@ class Insane < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'インセイン'
-  end
+  # ゲームシステム名
+  NAME = 'インセイン'
 
-  def gameType
-    "Insane"
-  end
+  # ダイスボットの識別子
+  ID = 'Insane'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

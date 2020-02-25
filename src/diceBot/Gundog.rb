@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class Gundog < DiceBot
-  def gameName
-    'ガンドッグ'
-  end
+  # ゲームシステム名
+  NAME = 'ガンドッグ'
 
-  def gameType
-    "Gundog"
-  end
+  # ダイスボットの識別子
+  ID = 'Gundog'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

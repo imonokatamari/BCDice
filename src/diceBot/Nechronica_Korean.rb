@@ -10,13 +10,11 @@ class Nechronica_Korean < DiceBot
     @defaultSuccessTarget = "6" # 목표치가 딱히 없을때의 난이도
   end
 
-  def gameName
-    '네크로니카'
-  end
+  # ゲームシステム名
+  NAME = '네크로니카'
 
-  def gameType
-    "Nechronica:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Nechronica:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

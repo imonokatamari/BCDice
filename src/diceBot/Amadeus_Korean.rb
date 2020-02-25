@@ -8,13 +8,11 @@ class Amadeus_Korean < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '아마데우스'
-  end
+  # ゲームシステム名
+  NAME = '아마데우스'
 
-  def gameType
-    "Amadeus:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Amadeus:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

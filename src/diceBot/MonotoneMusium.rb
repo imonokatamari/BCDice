@@ -11,13 +11,11 @@ class MonotoneMusium < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'モノトーン・ミュージアム'
-  end
+  # ゲームシステム名
+  NAME = 'モノトーン・ミュージアム'
 
-  def gameType
-    "MonotoneMusium"
-  end
+  # ダイスボットの識別子
+  ID = 'MonotoneMusium'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

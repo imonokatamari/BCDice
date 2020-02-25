@@ -10,13 +10,11 @@ class Airgetlamh < DiceBot
     ['(\d+)?A(A|L)(\d+)?((x|\*)(\d+)(\+(\d+))?)?(C(\d+))?']
   ])
 
-  def gameName
-    '朱の孤塔のエアゲトラム'
-  end
+  # ゲームシステム名
+  NAME = '朱の孤塔のエアゲトラム'
 
-  def gameType
-    "Airgetlamh"
-  end
+  # ダイスボットの識別子
+  ID = 'Airgetlamh'
 
   def getHelpMessage
     return <<MESSAGETEXT

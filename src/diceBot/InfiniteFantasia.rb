@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class InfiniteFantasia < DiceBot
-  def gameName
-    '無限のファンタジア'
-  end
+  # ゲームシステム名
+  NAME = '無限のファンタジア'
 
-  def gameType
-    "InfiniteFantasia"
-  end
+  # ダイスボットの識別子
+  ID = 'InfiniteFantasia'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

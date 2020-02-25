@@ -9,13 +9,11 @@ class SwordWorld2_5 < SwordWorld2_0
     super
   end
 
-  def gameName
-    'ソードワールド2.5'
-  end
+  # ゲームシステム名
+  NAME = 'ソードワールド2.5'
 
-  def gameType
-    return "SwordWorld2.5"
-  end
+  # ダイスボットの識別子
+  ID = 'SwordWorld2.5'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

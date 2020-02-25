@@ -10,13 +10,11 @@ class StellarKnights < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    '銀剣のステラナイツ'
-  end
+  # ゲームシステム名
+  NAME = '銀剣のステラナイツ'
 
-  def gameType
-    "StellarKnights"
-  end
+  # ダイスボットの識別子
+  ID = 'StellarKnights'
 
   def getHelpMessage
     return <<MESSAGETEXT

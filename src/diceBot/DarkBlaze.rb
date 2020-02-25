@@ -8,13 +8,11 @@ class DarkBlaze < DiceBot
     @sendMode = 2
   end
 
-  def gameName
-    'ダークブレイズ'
-  end
+  # ゲームシステム名
+  NAME = 'ダークブレイズ'
 
-  def gameType
-    "DarkBlaze"
-  end
+  # ダイスボットの識別子
+  ID = 'DarkBlaze'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

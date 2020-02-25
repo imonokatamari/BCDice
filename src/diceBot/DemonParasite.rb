@@ -10,13 +10,11 @@ class DemonParasite < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'デモンパラサイト'
-  end
+  # ゲームシステム名
+  NAME = 'デモンパラサイト'
 
-  def gameType
-    "DemonParasite"
-  end
+  # ダイスボットの識別子
+  ID = 'DemonParasite'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -11,13 +11,11 @@ class Cthulhu_ChineseTraditional < DiceBot
     @fumble_percentage   = 1
   end
 
-  def gameName
-    '克蘇魯神話'
-  end
+  # ゲームシステム名
+  NAME = '克蘇魯神話'
 
-  def gameType
-    "Cthulhu:ChineseTraditional"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu:ChineseTraditional'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

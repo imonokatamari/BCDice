@@ -9,13 +9,11 @@ class EmbryoMachine < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'エムブリオマシン'
-  end
+  # ゲームシステム名
+  NAME = 'エムブリオマシン'
 
-  def gameType
-    "EmbryoMachine"
-  end
+  # ダイスボットの識別子
+  ID = 'EmbryoMachine'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

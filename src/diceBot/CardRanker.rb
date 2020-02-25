@@ -8,13 +8,11 @@ class CardRanker < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'カードランカー'
-  end
+  # ゲームシステム名
+  NAME = 'カードランカー'
 
-  def gameType
-    "CardRanker"
-  end
+  # ダイスボットの識別子
+  ID = 'CardRanker'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

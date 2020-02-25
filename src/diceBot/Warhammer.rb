@@ -9,13 +9,11 @@ class Warhammer < DiceBot
     @fractionType = "roundUp" # 端数切り上げに設定
   end
 
-  def gameName
-    'ウォーハンマー'
-  end
+  # ゲームシステム名
+  NAME = 'ウォーハンマー'
 
-  def gameType
-    "Warhammer"
-  end
+  # ダイスボットの識別子
+  ID = 'Warhammer'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

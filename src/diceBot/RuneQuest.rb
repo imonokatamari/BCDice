@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class RuneQuest < DiceBot
-  def gameName
-    'ルーンクエスト'
-  end
+  # ゲームシステム名
+  NAME = 'ルーンクエスト'
 
-  def gameType
-    "RuneQuest"
-  end
+  # ダイスボットの識別子
+  ID = 'RuneQuest'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

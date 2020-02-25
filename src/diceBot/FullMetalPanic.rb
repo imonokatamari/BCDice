@@ -13,13 +13,12 @@ class FullMetalPanic < SRS
 
   # ゲームシステム名を返す
   # @return [String]
-  def gameName
-    'フルメタル・パニック！'
-  end
+  # ゲームシステム名
+  NAME = 'フルメタル・パニック！'
 
   # ゲームシステム識別子を返す
   # @return [String]
-  def gameType
-    'FullMetalPanic'
-  end
+  # ダイスボットの識別子
+  ID = 'FullMetalPanic'
+
 end

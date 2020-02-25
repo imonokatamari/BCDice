@@ -7,13 +7,11 @@ class HatsuneMiku < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '初音ミクTRPG ココロダンジョン'
-  end
+  # ゲームシステム名
+  NAME = '初音ミクTRPG ココロダンジョン'
 
-  def gameType
-    "HatsuneMiku"
-  end
+  # ダイスボットの識別子
+  ID = 'HatsuneMiku'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

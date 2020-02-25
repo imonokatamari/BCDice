@@ -8,13 +8,11 @@ class ShadowRun < DiceBot
     @unlimitedRollDiceType = 6
   end
 
-  def gameName
-    'シャドウラン'
-  end
+  # ゲームシステム名
+  NAME = 'シャドウラン'
 
-  def gameType
-    "ShadowRun"
-  end
+  # ダイスボットの識別子
+  ID = 'ShadowRun'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

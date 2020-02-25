@@ -8,13 +8,11 @@ class Utakaze < DiceBot
     @arrayDragonDiceName = ['', '風', '雨', '雲', '影', '月', '歌']
   end
 
-  def gameName
-    'ウタカゼ'
-  end
+  # ゲームシステム名
+  NAME = 'ウタカゼ'
 
-  def gameType
-    "Utakaze"
-  end
+  # ダイスボットの識別子
+  ID = 'Utakaze'
 
   def getHelpMessage
     return <<MESSAGETEXT

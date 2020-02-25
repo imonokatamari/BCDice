@@ -11,13 +11,11 @@ class Raisondetre < DiceBot
     '(-)?(\d+)?DD([1-9])?([\+\-]\d+)?'
   ])
 
-  def gameName
-    '叛逆レゾンデートル'
-  end
+  # ゲームシステム名
+  NAME = '叛逆レゾンデートル'
 
-  def gameType
-    "Raisondetre"
-  end
+  # ダイスボットの識別子
+  ID = 'Raisondetre'
 
   def getHelpMessage
     return <<MESSAGETEXT

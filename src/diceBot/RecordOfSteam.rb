@@ -3,13 +3,11 @@
 class RecordOfSteam < DiceBot
   setPrefixes(['\d+S\d+.*'])
 
-  def gameType
-    "RecordOfSteam"
-  end
+  # ダイスボットの識別子
+  ID = 'RecordOfSteam'
 
-  def gameName
-    "Record of Steam"
-  end
+  # ゲームシステム名
+  NAME = 'Record of Steam'
 
   def getHelpMessage
     return <<MESSAGETEXT

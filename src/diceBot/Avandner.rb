@@ -8,13 +8,11 @@ class Avandner < DiceBot
     @sortType = 1 # ダイスのソート有
   end
 
-  def gameName
-    '黒絢のアヴァンドナー'
-  end
+  # ゲームシステム名
+  NAME = '黒絢のアヴァンドナー'
 
-  def gameType
-    "Avandner"
-  end
+  # ダイスボットの識別子
+  ID = 'Avandner'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -23,13 +23,11 @@ class StratoShout < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ストラトシャウト'
-  end
+  # ゲームシステム名
+  NAME = 'ストラトシャウト'
 
-  def gameType
-    "StratoShout"
-  end
+  # ダイスボットの識別子
+  ID = 'StratoShout'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

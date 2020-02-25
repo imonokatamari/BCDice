@@ -3,13 +3,11 @@
 class CrashWorld < DiceBot
   setPrefixes(['CW\d+'])
 
-  def gameType
-    "CrashWorld"
-  end
+  # ダイスボットの識別子
+  ID = 'CrashWorld'
 
-  def gameName
-    '墜落世界'
-  end
+  # ゲームシステム名
+  NAME = '墜落世界'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

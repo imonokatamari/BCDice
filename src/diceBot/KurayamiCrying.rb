@@ -5,13 +5,11 @@ class KurayamiCrying < DiceBot
     super
   end
 
-  def gameName
-    'クラヤミクライン'
-  end
+  # ゲームシステム名
+  NAME = 'クラヤミクライン'
 
-  def gameType
-    "KurayamiCrying"
-  end
+  # ダイスボットの識別子
+  ID = 'KurayamiCrying'
 
   def getHelpMessage
     return <<MESSAGETEXT

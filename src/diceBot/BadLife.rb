@@ -7,13 +7,11 @@ class BadLife < DiceBot
     super
   end
 
-  def gameName
-    '犯罪活劇RPGバッドライフ'
-  end
+  # ゲームシステム名
+  NAME = '犯罪活劇RPGバッドライフ'
 
-  def gameType
-    "BadLife"
-  end
+  # ダイスボットの識別子
+  ID = 'BadLife'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class Chill3 < DiceBot
-  def gameName
-    'Chill 3'
-  end
+  # ゲームシステム名
+  NAME = 'Chill 3'
 
-  def gameType
-    "Chill3"
-  end
+  # ダイスボットの識別子
+  ID = 'Chill3'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

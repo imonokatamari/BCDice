@@ -8,13 +8,11 @@ class Kamigakari < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    '神我狩'
-  end
+  # ゲームシステム名
+  NAME = '神我狩'
 
-  def gameType
-    "Kamigakari"
-  end
+  # ダイスボットの識別子
+  ID = 'Kamigakari'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -9,13 +9,11 @@ class HuntersMoon < DiceBot
     @fractionType = "roundUp"; # 端数切り上げに設定
   end
 
-  def gameName
-    'ハンターズムーン'
-  end
+  # ゲームシステム名
+  NAME = 'ハンターズムーン'
 
-  def gameType
-    "HuntersMoon"
-  end
+  # ダイスボットの識別子
+  ID = 'HuntersMoon'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

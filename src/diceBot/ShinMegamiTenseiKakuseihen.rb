@@ -5,13 +5,11 @@ class ShinMegamiTenseiKakuseihen < DiceBot
     super
   end
 
-  def gameName
-    '真・女神転生TRPG　覚醒篇'
-  end
+  # ゲームシステム名
+  NAME = '真・女神転生TRPG　覚醒篇'
 
-  def gameType
-    "SMTKakuseihen"
-  end
+  # ダイスボットの識別子
+  ID = 'SMTKakuseihen'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

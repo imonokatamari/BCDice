@@ -6,13 +6,11 @@ class ColossalHunter < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'コロッサルハンター'
-  end
+  # ゲームシステム名
+  NAME = 'コロッサルハンター'
 
-  def gameType
-    "ColossalHunter"
-  end
+  # ダイスボットの識別子
+  ID = 'ColossalHunter'
 
   def getHelpMessage
     return <<MESSAGETEXT

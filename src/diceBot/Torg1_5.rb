@@ -5,13 +5,11 @@ require 'diceBot/Torg'
 class Torg1_5 < Torg
   setPrefixes(Torg.prefixes)
 
-  def gameName
-    'トーグ1.5版'
-  end
+  # ゲームシステム名
+  NAME = 'トーグ1.5版'
 
-  def gameType
-    "TORG1.5"
-  end
+  # ダイスボットの識別子
+  ID = 'TORG1.5'
 
   # 一般結果表 成功度
   def get_torg_success_level(value)

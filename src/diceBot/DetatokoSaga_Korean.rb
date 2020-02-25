@@ -16,13 +16,11 @@ class DetatokoSaga_Korean < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '데타토코 사가'
-  end
+  # ゲームシステム名
+  NAME = '데타토코 사가'
 
-  def gameType
-    "DetatokoSaga:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'DetatokoSaga:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -10,13 +10,11 @@ class Cthulhu7th_ChineseTraditional < DiceBot
     @bonus_dice_range = (-2..2)
   end
 
-  def gameName
-    '克蘇魯神話第7版'
-  end
+  # ゲームシステム名
+  NAME = '克蘇魯神話第7版'
 
-  def gameType
-    "Cthulhu7th:ChineseTraditional"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu7th:ChineseTraditional'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -11,13 +11,11 @@ class DoubleCross < DiceBot
     super
   end
 
-  def gameName
-    'ダブルクロス2nd,3rd'
-  end
+  # ゲームシステム名
+  NAME = 'ダブルクロス2nd,3rd'
 
-  def gameType
-    "DoubleCross"
-  end
+  # ダイスボットの識別子
+  ID = 'DoubleCross'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

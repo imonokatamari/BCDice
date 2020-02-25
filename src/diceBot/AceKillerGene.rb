@@ -8,13 +8,11 @@ class AceKillerGene < GardenOrder
     'DC(SL|BL|IM|BR|RF|EL).+'
   ])
 
-  def gameName
-    'エースキラージーン'
-  end
+  # ゲームシステム名
+  NAME = 'エースキラージーン'
 
-  def gameType
-    "AceKillerGene"
-  end
+  # ダイスボットの識別子
+  ID = 'AceKillerGene'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

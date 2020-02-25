@@ -9,13 +9,11 @@ class BloodMoon < DiceBot
     @fractionType = "roundUp" # 端数切り上げに設定
   end
 
-  def gameName
-    'ブラッド・ムーン'
-  end
+  # ゲームシステム名
+  NAME = 'ブラッド・ムーン'
 
-  def gameType
-    "BloodMoon"
-  end
+  # ダイスボットの識別子
+  ID = 'BloodMoon'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

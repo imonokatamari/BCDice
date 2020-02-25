@@ -11,13 +11,11 @@ class Villaciel < DiceBot
     @fractionType = 'roundUp' # 端数は切り上げ
   end
 
-  def gameName
-    '蒼天のヴィラシエル'
-  end
+  # ゲームシステム名
+  NAME = '蒼天のヴィラシエル'
 
-  def gameType
-    'Villaciel'
-  end
+  # ダイスボットの識別子
+  ID = 'Villaciel'
 
   def getHelpMessage
     <<MESSAGETEXT

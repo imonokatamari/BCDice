@@ -7,13 +7,11 @@ class ZettaiReido < DiceBot
     super
   end
 
-  def gameName
-    '絶対隷奴'
-  end
+  # ゲームシステム名
+  NAME = '絶対隷奴'
 
-  def gameType
-    "ZettaiReido"
-  end
+  # ダイスボットの識別子
+  ID = 'ZettaiReido'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

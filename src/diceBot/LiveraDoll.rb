@@ -12,13 +12,11 @@ class LiveraDoll < DiceBot
     @sortType = 3
   end
 
-  def gameName
-    '紫縞のリヴラドール'
-  end
+  # ゲームシステム名
+  NAME = '紫縞のリヴラドール'
 
-  def gameType
-    "LiveraDoll"
-  end
+  # ダイスボットの識別子
+  ID = 'LiveraDoll'
 
   def getHelpMessage
     return <<MESSAGETEXT

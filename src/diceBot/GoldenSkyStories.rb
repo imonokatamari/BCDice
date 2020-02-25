@@ -7,13 +7,11 @@ class GoldenSkyStories < DiceBot
     super
   end
 
-  def gameName
-    'ゆうやけこやけ'
-  end
+  # ゲームシステム名
+  NAME = 'ゆうやけこやけ'
 
-  def gameType
-    "GoldenSkyStories"
-  end
+  # ダイスボットの識別子
+  ID = 'GoldenSkyStories'
 
   def getHelpMessage
     return <<MESSAGETEXT

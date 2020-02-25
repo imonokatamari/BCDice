@@ -3,13 +3,11 @@
 class WitchQuest < DiceBot
   setPrefixes(['WQ\d+', 'SET\d+'])
 
-  def gameName
-    'ウィッチクエスト'
-  end
+  # ゲームシステム名
+  NAME = 'ウィッチクエスト'
 
-  def gameType
-    "WitchQuest"
-  end
+  # ダイスボットの識別子
+  ID = 'WitchQuest'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -11,13 +11,11 @@ class Cthulhu_Korean < DiceBot
     @fumble_percentage   = 1
   end
 
-  def gameName
-    '크툴루'
-  end
+  # ゲームシステム名
+  NAME = '크툴루'
 
-  def gameType
-    "Cthulhu:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

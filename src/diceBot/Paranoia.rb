@@ -7,13 +7,11 @@ class Paranoia < DiceBot
     super
   end
 
-  def gameName
-    'パラノイア'
-  end
+  # ゲームシステム名
+  NAME = 'パラノイア'
 
-  def gameType
-    "Paranoia"
-  end
+  # ダイスボットの識別子
+  ID = 'Paranoia'
 
   def getHelpMessage
     return <<MESSAGETEXT

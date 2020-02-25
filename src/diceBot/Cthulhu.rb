@@ -11,13 +11,11 @@ class Cthulhu < DiceBot
     @fumble_percentage   = 1
   end
 
-  def gameName
-    'クトゥルフ'
-  end
+  # ゲームシステム名
+  NAME = 'クトゥルフ'
 
-  def gameType
-    "Cthulhu"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

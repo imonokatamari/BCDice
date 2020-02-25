@@ -10,13 +10,11 @@ class RokumonSekai2 < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    '六門世界2nd'
-  end
+  # ゲームシステム名
+  NAME = '六門世界2nd'
 
-  def gameType
-    "RokumonSekai2"
-  end
+  # ダイスボットの識別子
+  ID = 'RokumonSekai2'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

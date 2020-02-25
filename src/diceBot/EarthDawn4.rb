@@ -12,13 +12,11 @@ class EarthDawn4 < EarthDawn
     @calcText = ''
   end
 
-  def gameName
-    'アースドーン4版'
-  end
+  # ゲームシステム名
+  NAME = 'アースドーン4版'
 
-  def gameType
-    "EarthDawn4"
-  end
+  # ダイスボットの識別子
+  ID = 'EarthDawn4'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

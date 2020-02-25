@@ -8,13 +8,11 @@ class Torg < DiceBot
     @sendMode = 2
   end
 
-  def gameName
-    'トーグ'
-  end
+  # ゲームシステム名
+  NAME = 'トーグ'
 
-  def gameType
-    "TORG"
-  end
+  # ダイスボットの識別子
+  ID = 'TORG'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

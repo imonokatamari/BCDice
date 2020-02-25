@@ -10,13 +10,11 @@ class Cthulhu7th_Korean < DiceBot
     @bonus_dice_range = (-2..2)
   end
 
-  def gameName
-    '크툴루의 부름 7판'
-  end
+  # ゲームシステム名
+  NAME = '크툴루의 부름 7판'
 
-  def gameType
-    "Cthulhu7th:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu7th:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

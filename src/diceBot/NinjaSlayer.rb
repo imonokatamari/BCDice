@@ -18,13 +18,11 @@ class NinjaSlayer < DiceBot
     @defaultSuccessTarget = ">=4"
   end
 
-  def gameName
-    'ニンジャスレイヤーTRPG'
-  end
+  # ゲームシステム名
+  NAME = 'ニンジャスレイヤーTRPG'
 
-  def gameType
-    "NinjaSlayer"
-  end
+  # ダイスボットの識別子
+  ID = 'NinjaSlayer'
 
   def getHelpMessage
     return <<MESSAGETEXT

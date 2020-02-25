@@ -5,13 +5,11 @@ class WaresBlade < DiceBot
     super
   end
 
-  def gameName
-    'ワースブレイド'
-  end
+  # ゲームシステム名
+  NAME = 'ワースブレイド'
 
-  def gameType
-    "WaresBlade"
-  end
+  # ダイスボットの識別子
+  ID = 'WaresBlade'
 
   def getHelpMessage
     return <<MESSAGETEXT

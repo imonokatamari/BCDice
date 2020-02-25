@@ -10,13 +10,11 @@ class Alter_raise < DiceBot
     super
   end
 
-  def gameName
-    '心衝想機TRPGアルトレイズ'
-  end
+  # ゲームシステム名
+  NAME = '心衝想機TRPGアルトレイズ'
 
-  def gameType
-    "Alter_raise"
-  end
+  # ダイスボットの識別子
+  ID = 'Alter_raise'
 
   def getHelpMessage
     return <<MESSAGETEXT

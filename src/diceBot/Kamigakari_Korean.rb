@@ -16,13 +16,11 @@ class Kamigakari_Korean < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    '카미가카리'
-  end
+  # ゲームシステム名
+  NAME = '카미가카리'
 
-  def gameType
-    "Kamigakari:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Kamigakari:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

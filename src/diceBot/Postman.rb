@@ -12,13 +12,11 @@ class Postman < DiceBot
     @sortType = 1 # ダイスのソート有
   end
 
-  def gameName
-    '壊れた世界のポストマン'
-  end
+  # ゲームシステム名
+  NAME = '壊れた世界のポストマン'
 
-  def gameType
-    "Postman"
-  end
+  # ダイスボットの識別子
+  ID = 'Postman'
 
   def getHelpMessage
     return <<MESSAGETEXT

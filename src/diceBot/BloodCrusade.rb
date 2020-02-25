@@ -9,13 +9,11 @@ class BloodCrusade < DiceBot
     @fractionType = "roundUp" # 端数切り上げに設定
   end
 
-  def gameName
-    'ブラッド・クルセイド'
-  end
+  # ゲームシステム名
+  NAME = 'ブラッド・クルセイド'
 
-  def gameType
-    "BloodCrusade"
-  end
+  # ダイスボットの識別子
+  ID = 'BloodCrusade'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -11,13 +11,11 @@ class Strave < DiceBot
     @sortType = 1 # ダイスのソート有
   end
 
-  def gameName
-    '碧空のストレイヴ'
-  end
+  # ゲームシステム名
+  NAME = '碧空のストレイヴ'
 
-  def gameType
-    "Strave"
-  end
+  # ダイスボットの識別子
+  ID = 'Strave'
 
   def getHelpMessage
     return <<MESSAGETEXT

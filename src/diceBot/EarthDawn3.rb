@@ -11,13 +11,11 @@ class EarthDawn3 < EarthDawn
     @sortType = 1
   end
 
-  def gameName
-    'アースドーン3版'
-  end
+  # ゲームシステム名
+  NAME = 'アースドーン3版'
 
-  def gameType
-    "EarthDawn3"
-  end
+  # ダイスボットの識別子
+  ID = 'EarthDawn3'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

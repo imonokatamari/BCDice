@@ -8,13 +8,11 @@ class Arianrhod < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'アリアンロッド'
-  end
+  # ゲームシステム名
+  NAME = 'アリアンロッド'
 
-  def gameType
-    "Arianrhod"
-  end
+  # ダイスボットの識別子
+  ID = 'Arianrhod'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -7,13 +7,11 @@ class NightWizard3rd < NightWizard
     super
   end
 
-  def gameName
-    'ナイトウィザード3版'
-  end
+  # ゲームシステム名
+  NAME = 'ナイトウィザード3版'
 
-  def gameType
-    "NightWizard3rd"
-  end
+  # ダイスボットの識別子
+  ID = 'NightWizard3rd'
 
   def getFumbleTextAndTotal(base, modify, dice_str)
     total = base + modify

@@ -8,13 +8,11 @@ class ArsMagica < DiceBot
     @sendMode = 2
   end
 
-  def gameName
-    'アルスマギカ'
-  end
+  # ゲームシステム名
+  NAME = 'アルスマギカ'
 
-  def gameType
-    "ArsMagica"
-  end
+  # ダイスボットの識別子
+  ID = 'ArsMagica'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

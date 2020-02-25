@@ -9,13 +9,11 @@ class SwordWorld < DiceBot
     @rating_table = rating_table
   end
 
-  def gameName
-    'ソードワールド'
-  end
+  # ゲームシステム名
+  NAME = 'ソードワールド'
 
-  def gameType
-    "SwordWorld"
-  end
+  # ダイスボットの識別子
+  ID = 'SwordWorld'
 
   def getHelpMessage
     '・SW　レーティング表　　　　　(Kx[c]+m$f) (x:キー, c:クリティカル値, m:ボーナス, f:出目修正)'

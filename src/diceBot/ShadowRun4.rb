@@ -8,13 +8,11 @@ class ShadowRun4 < DiceBot
     @defaultSuccessTarget = ">=5" # 目標値が空欄の時の目標値
   end
 
-  def gameName
-    'シャドウラン第４版'
-  end
+  # ゲームシステム名
+  NAME = 'シャドウラン第４版'
 
-  def gameType
-    "ShadowRun4"
-  end
+  # ダイスボットの識別子
+  ID = 'ShadowRun4'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

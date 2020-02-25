@@ -10,13 +10,11 @@ class MagicaLogia < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'マギカロギア'
-  end
+  # ゲームシステム名
+  NAME = 'マギカロギア'
 
-  def gameType
-    "MagicaLogia"
-  end
+  # ダイスボットの識別子
+  ID = 'MagicaLogia'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

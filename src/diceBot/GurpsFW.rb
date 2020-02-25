@@ -30,13 +30,11 @@ class GurpsFW < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'ガープスフィルトウィズ'
-  end
+  # ゲームシステム名
+  NAME = 'ガープスフィルトウィズ'
 
-  def gameType
-    "GurpsFW"
-  end
+  # ダイスボットの識別子
+  ID = 'GurpsFW'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

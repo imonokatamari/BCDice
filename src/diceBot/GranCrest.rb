@@ -22,13 +22,11 @@ class GranCrest < DiceBot
     @fractionType = "omit"
   end
 
-  def gameName
-    'グランクレスト'
-  end
+  # ゲームシステム名
+  NAME = 'グランクレスト'
 
-  def gameType
-    "GranCrest"
-  end
+  # ダイスボットの識別子
+  ID = 'GranCrest'
 
   def getHelpMessage
     return <<MESSAGETEXT

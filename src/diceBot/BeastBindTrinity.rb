@@ -18,13 +18,11 @@ class BeastBindTrinity < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ビーストバインド トリニティ'
-  end
+  # ゲームシステム名
+  NAME = 'ビーストバインド トリニティ'
 
-  def gameType
-    "BeastBindTrinity"
-  end
+  # ダイスボットの識別子
+  ID = 'BeastBindTrinity'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

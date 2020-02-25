@@ -8,13 +8,11 @@ class SharedFantasia < DiceBot
     super()
   end
 
-  def gameName
-    'Shared†Fantasia'
-  end
+  # ゲームシステム名
+  NAME = 'Shared†Fantasia'
 
-  def gameType
-    "SharedFantasia"
-  end
+  # ダイスボットの識別子
+  ID = 'SharedFantasia'
 
   def getHelpMessage
     return <<MESSAGETEXT

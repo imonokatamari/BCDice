@@ -8,13 +8,11 @@ class NightWizard < DiceBot
     @sendMode = 2
   end
 
-  def gameName
-    'ナイトウィザード2版'
-  end
+  # ゲームシステム名
+  NAME = 'ナイトウィザード2版'
 
-  def gameType
-    "NightWizard"
-  end
+  # ダイスボットの識別子
+  ID = 'NightWizard'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

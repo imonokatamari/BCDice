@@ -8,13 +8,11 @@ class Ryutama < DiceBot
     @validDiceTypes = [20, 12, 10, 8, 6, 4, 2]
   end
 
-  def gameName
-    'りゅうたま'
-  end
+  # ゲームシステム名
+  NAME = 'りゅうたま'
 
-  def gameType
-    "Ryutama"
-  end
+  # ダイスボットの識別子
+  ID = 'Ryutama'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

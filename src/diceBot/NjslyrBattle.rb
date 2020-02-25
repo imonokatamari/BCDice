@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class NjslyrBattle < DiceBot
-  def gameName
-    'NJSLYRBATTLE'
-  end
+  # ゲームシステム名
+  NAME = 'NJSLYRBATTLE'
 
-  def gameType
-    "NJSLYRBATTLE"
-  end
+  # ダイスボットの識別子
+  ID = 'NJSLYRBATTLE'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

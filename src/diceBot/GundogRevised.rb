@@ -5,13 +5,11 @@ require 'diceBot/Gundog'
 class GundogRevised < DiceBot
   setPrefixes(['(.DPT|.FT)(\+|\-)?\d*'])
 
-  def gameName
-    'ガンドッグ・リヴァイズド'
-  end
+  # ゲームシステム名
+  NAME = 'ガンドッグ・リヴァイズド'
 
-  def gameType
-    "GundogRevised"
-  end
+  # ダイスボットの識別子
+  ID = 'GundogRevised'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

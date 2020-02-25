@@ -8,13 +8,11 @@ class Gorilla < DiceBot
     super()
   end
 
-  def gameName
-    'ゴリラTRPG'
-  end
+  # ゲームシステム名
+  NAME = 'ゴリラTRPG'
 
-  def gameType
-    "Gorilla"
-  end
+  # ダイスボットの識別子
+  ID = 'Gorilla'
 
   def getHelpMessage
     return <<MESSAGETEXT

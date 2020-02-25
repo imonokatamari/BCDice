@@ -10,13 +10,11 @@ class TokyoGhostResearch < DiceBot
     super
   end
 
-  def gameName
-    '東京ゴーストリサーチ'
-  end
+  # ゲームシステム名
+  NAME = '東京ゴーストリサーチ'
 
-  def gameType
-    "TokyoGhostResearch"
-  end
+  # ダイスボットの識別子
+  ID = 'TokyoGhostResearch'
 
   def getHelpMessage
     return <<MESSAGETEXT

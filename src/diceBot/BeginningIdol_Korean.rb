@@ -95,13 +95,11 @@ class BeginningIdol_Korean < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '비기닝 아이돌'
-  end
+  # ゲームシステム名
+  NAME = '비기닝 아이돌'
 
-  def gameType
-    "BeginningIdol:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'BeginningIdol:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

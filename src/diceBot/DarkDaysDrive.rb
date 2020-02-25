@@ -6,13 +6,11 @@ class DarkDaysDrive < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ダークデイズドライブ'
-  end
+  # ゲームシステム名
+  NAME = 'ダークデイズドライブ'
 
-  def gameType
-    "DarkDaysDrive"
-  end
+  # ダイスボットの識別子
+  ID = 'DarkDaysDrive'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

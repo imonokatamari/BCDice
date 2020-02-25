@@ -16,13 +16,11 @@ class DetatokoSaga < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'でたとこサーガ'
-  end
+  # ゲームシステム名
+  NAME = 'でたとこサーガ'
 
-  def gameType
-    "DetatokoSaga"
-  end
+  # ダイスボットの識別子
+  ID = 'DetatokoSaga'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

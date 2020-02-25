@@ -9,13 +9,11 @@ class Peekaboo < DiceBot
     @fractionType = "roundUp" # 端数切り上げに設定
   end
 
-  def gameName
-    'ピーカーブー'
-  end
+  # ゲームシステム名
+  NAME = 'ピーカーブー'
 
-  def gameType
-    "Peekaboo"
-  end
+  # ダイスボットの識別子
+  ID = 'Peekaboo'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

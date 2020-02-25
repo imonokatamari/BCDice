@@ -7,13 +7,11 @@ class NightmareHunterDeep < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'ナイトメアハンター=ディープ'
-  end
+  # ゲームシステム名
+  NAME = 'ナイトメアハンター=ディープ'
 
-  def gameType
-    "NightmareHunterDeep"
-  end
+  # ダイスボットの識別子
+  ID = 'NightmareHunterDeep'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

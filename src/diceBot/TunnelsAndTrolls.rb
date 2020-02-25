@@ -10,13 +10,11 @@ class TunnelsAndTrolls < DiceBot
     @sameDiceRerollCount = 1
   end
 
-  def gameName
-    'トンネルズ＆トロールズ'
-  end
+  # ゲームシステム名
+  NAME = 'トンネルズ＆トロールズ'
 
-  def gameType
-    "Tunnels & Trolls"
-  end
+  # ダイスボットの識別子
+  ID = 'Tunnels & Trolls'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -8,13 +8,11 @@ class LostRecord < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    "ロストレコード"
-  end
+  # ゲームシステム名
+  NAME = 'ロストレコード'
 
-  def gameType
-    "LostRecord"
-  end
+  # ダイスボットの識別子
+  ID = 'LostRecord'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -10,13 +10,11 @@ class EndBreaker < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'エンドブレイカー'
-  end
+  # ゲームシステム名
+  NAME = 'エンドブレイカー'
 
-  def gameType
-    "EndBreaker"
-  end
+  # ダイスボットの識別子
+  ID = 'EndBreaker'
 
   def getHelpMessage
     return <<MESSAGETEXT

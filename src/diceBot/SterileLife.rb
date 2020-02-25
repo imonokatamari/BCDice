@@ -3,13 +3,11 @@
 class SterileLife < DiceBot
   setPrefixes(['(\d+)*DA.*\[(\d+),(\d+)(,(\d+))?\]', 'VPFT', 'VNFT', 'VNRT', 'AAFT', 'AST', 'RNST', 'RET', 'TRST', 'TRAT', 'TRMT', 'TROT', 'TET', 'ENT', 'CUT', 'NAT', 'INT']) # '(\d+)*DA.*\[.*\]'
 
-  def gameName
-    'ステラーライフ'
-  end
+  # ゲームシステム名
+  NAME = 'ステラーライフ'
 
-  def gameType
-    "SterileLife"
-  end
+  # ダイスボットの識別子
+  ID = 'SterileLife'
 
   def getHelpMessage
     return <<MESSAGETEXT

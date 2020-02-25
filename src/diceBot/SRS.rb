@@ -180,19 +180,17 @@ HELP_MESSAGE
 
   # ゲームシステム名を返す
   # @return [String]
-  def gameName
-    'Standard RPG System'
-  end
+  # ゲームシステム名
+  NAME = 'Standard RPG System'
 
   # ゲームシステム識別子を返す
   # @return [String]
-  def gameType
-    'SRS'
-  end
+  # ダイスボットの識別子
+  ID = 'SRS'
 
   # ダイスボットの説明文を返す
   # @return [String]
-  def getHelpMessage
+  def help_message
     self.class.help_message
   end
 

@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class Pendragon < DiceBot
-  def gameName
-    'ペンドラゴン'
-  end
+  # ゲームシステム名
+  NAME = 'ペンドラゴン'
 
-  def gameType
-    "Pendragon"
-  end
+  # ダイスボットの識別子
+  ID = 'Pendragon'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

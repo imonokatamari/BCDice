@@ -10,13 +10,11 @@ class Cthulhu7th < DiceBot
     @bonus_dice_range = (-2..2)
   end
 
-  def gameName
-    '新クトゥルフ'
-  end
+  # ゲームシステム名
+  NAME = '新クトゥルフ'
 
-  def gameType
-    "Cthulhu7th"
-  end
+  # ダイスボットの識別子
+  ID = 'Cthulhu7th'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

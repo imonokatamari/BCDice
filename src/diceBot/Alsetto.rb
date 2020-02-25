@@ -8,13 +8,11 @@ class Alsetto < DiceBot
     @sortType = 1 # ダイスのソート有
   end
 
-  def gameName
-    '詩片のアルセット'
-  end
+  # ゲームシステム名
+  NAME = '詩片のアルセット'
 
-  def gameType
-    "Alsetto"
-  end
+  # ダイスボットの識別子
+  ID = 'Alsetto'
 
   def getHelpMessage
     return <<MESSAGETEXT

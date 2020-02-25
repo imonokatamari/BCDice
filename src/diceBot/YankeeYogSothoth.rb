@@ -6,13 +6,11 @@ class YankeeYogSothoth < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ヤンキー＆ヨグ＝ソトース'
-  end
+  # ゲームシステム名
+  NAME = 'ヤンキー＆ヨグ＝ソトース'
 
-  def gameType
-    "YankeeYogSothoth"
-  end
+  # ダイスボットの識別子
+  ID = 'YankeeYogSothoth'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

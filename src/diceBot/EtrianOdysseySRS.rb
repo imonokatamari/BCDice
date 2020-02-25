@@ -13,13 +13,12 @@ class EtrianOdysseySRS < SRS
 
   # ゲームシステム名を返す
   # @return [String]
-  def gameName
-    '世界樹の迷宮SRS'
-  end
+  # ゲームシステム名
+  NAME = '世界樹の迷宮SRS'
 
   # ゲームシステム識別子を返す
   # @return [String]
-  def gameType
-    'EtrianOdysseySRS'
-  end
+  # ダイスボットの識別子
+  ID = 'EtrianOdysseySRS'
+
 end

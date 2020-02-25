@@ -7,13 +7,11 @@ class Pathfinder < DungeonsAndDoragons
     super
   end
 
-  def gameName
-    'Pathfinder'
-  end
+  # ゲームシステム名
+  NAME = 'Pathfinder'
 
-  def gameType
-    "Pathfinder"
-  end
+  # ダイスボットの識別子
+  ID = 'Pathfinder'
 
   def getHelpMessage
     return <<MESSAGETEXT

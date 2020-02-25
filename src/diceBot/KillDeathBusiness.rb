@@ -8,13 +8,11 @@ class KillDeathBusiness < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'キルデスビジネス'
-  end
+  # ゲームシステム名
+  NAME = 'キルデスビジネス'
 
-  def gameType
-    "KillDeathBusiness"
-  end
+  # ダイスボットの識別子
+  ID = 'KillDeathBusiness'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

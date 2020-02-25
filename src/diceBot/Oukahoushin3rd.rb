@@ -5,13 +5,11 @@ class Oukahoushin3rd < DiceBot
     super
   end
 
-  def gameName
-    '央華封神RPG第三版'
-  end
+  # ゲームシステム名
+  NAME = '央華封神RPG第三版'
 
-  def gameType
-    "Oukahoushin3rd"
-  end
+  # ダイスボットの識別子
+  ID = 'Oukahoushin3rd'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

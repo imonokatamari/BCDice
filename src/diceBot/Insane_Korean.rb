@@ -13,13 +13,11 @@ class Insane_Korean < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '인세인'
-  end
+  # ゲームシステム名
+  NAME = '인세인'
 
-  def gameType
-    "Insane:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Insane:Korean'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

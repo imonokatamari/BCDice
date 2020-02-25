@@ -10,13 +10,11 @@ class Illusio < DiceBot
     '(\d+)?IL([1-6])?([1-6])?([1-6])?([1-6])?([1-6])?([1-6])?(P)?'
   ])
 
-  def gameName
-    '晃天のイルージオ'
-  end
+  # ゲームシステム名
+  NAME = '晃天のイルージオ'
 
-  def gameType
-    "Illusio"
-  end
+  # ダイスボットの識別子
+  ID = 'Illusio'
 
   def getHelpMessage
     return <<MESSAGETEXT

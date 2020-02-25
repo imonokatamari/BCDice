@@ -7,13 +7,11 @@ class HarnMaster < DiceBot
     super
   end
 
-  def gameName
-    'ハーンマスター'
-  end
+  # ゲームシステム名
+  NAME = 'ハーンマスター'
 
-  def gameType
-    "HarnMaster"
-  end
+  # ダイスボットの識別子
+  ID = 'HarnMaster'
 
   def getHelpMessage
     return <<MESSAGETEXT

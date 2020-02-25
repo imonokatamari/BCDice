@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class Elric < DiceBot
-  def gameName
-    'エルリック！'
-  end
+  # ゲームシステム名
+  NAME = 'エルリック！'
 
-  def gameType
-    "Elric!"
-  end
+  # ダイスボットの識別子
+  ID = 'Elric!'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

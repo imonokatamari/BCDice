@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 class JamesBond < DiceBot
-  def gameName
-    'ジェームズ・ボンド007'
-  end
+  # ゲームシステム名
+  NAME = 'ジェームズ・ボンド007'
 
-  def gameType
-    "JamesBond"
-  end
+  # ダイスボットの識別子
+  ID = 'JamesBond'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

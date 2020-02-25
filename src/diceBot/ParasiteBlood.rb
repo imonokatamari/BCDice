@@ -5,13 +5,11 @@ require 'diceBot/DemonParasite'
 class ParasiteBlood < DemonParasite
   setPrefixes(['(N|A|M|U|C|)?URGE\d+'])
 
-  def gameName
-    'パラサイトブラッド'
-  end
+  # ゲームシステム名
+  NAME = 'パラサイトブラッド'
 
-  def gameType
-    "ParasiteBlood"
-  end
+  # ダイスボットの識別子
+  ID = 'ParasiteBlood'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

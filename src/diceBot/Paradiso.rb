@@ -3,13 +3,11 @@
 class Paradiso < DiceBot
   setPrefixes(['(\d+)*D20<=.*', '(\d+)*CP.*', 'RMT', 'TOT', 'EXT', 'SUT', 'DC(\d+).*'])
 
-  def gameName
-    'チェレステ色のパラディーゾ'
-  end
+  # ゲームシステム名
+  NAME = 'チェレステ色のパラディーゾ'
 
-  def gameType
-    "Paradiso"
-  end
+  # ダイスボットの識別子
+  ID = 'Paradiso'
 
   def getHelpMessage
     return <<MESSAGETEXT

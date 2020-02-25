@@ -5,13 +5,11 @@ class IthaWenUa < DiceBot
     super
   end
 
-  def gameName
-    'イサー・ウェン＝アー'
-  end
+  # ゲームシステム名
+  NAME = 'イサー・ウェン＝アー'
 
-  def gameType
-    "IthaWenUa"
-  end
+  # ダイスボットの識別子
+  ID = 'IthaWenUa'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -7,13 +7,11 @@ class BattleTech < DiceBot
     super
   end
 
-  def gameName
-    'バトルテック'
-  end
+  # ゲームシステム名
+  NAME = 'バトルテック'
 
-  def gameType
-    "BattleTech"
-  end
+  # ダイスボットの識別子
+  ID = 'BattleTech'
 
   def getHelpMessage
     return <<MESSAGETEXT

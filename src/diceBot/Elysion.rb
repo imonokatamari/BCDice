@@ -6,13 +6,11 @@ class Elysion < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'エリュシオン'
-  end
+  # ゲームシステム名
+  NAME = 'エリュシオン'
 
-  def gameType
-    "Elysion"
-  end
+  # ダイスボットの識別子
+  ID = 'Elysion'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -5,13 +5,11 @@ class EclipsePhase < DiceBot
     super
   end
 
-  def gameName
-    'エクリプス・フェイズ'
-  end
+  # ゲームシステム名
+  NAME = 'エクリプス・フェイズ'
 
-  def gameType
-    "EclipsePhase"
-  end
+  # ダイスボットの識別子
+  ID = 'EclipsePhase'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -10,13 +10,11 @@ class DiceOfTheDead < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'ダイス・オブ・ザ・デッド'
-  end
+  # ゲームシステム名
+  NAME = 'ダイス・オブ・ザ・デッド'
 
-  def gameType
-    "DiceOfTheDead"
-  end
+  # ダイスボットの識別子
+  ID = 'DiceOfTheDead'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

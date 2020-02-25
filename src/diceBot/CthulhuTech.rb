@@ -7,13 +7,11 @@ class CthulhuTech < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'クトゥルフテック'
-  end
+  # ゲームシステム名
+  NAME = 'クトゥルフテック'
 
-  def gameType
-    "CthulhuTech"
-  end
+  # ダイスボットの識別子
+  ID = 'CthulhuTech'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

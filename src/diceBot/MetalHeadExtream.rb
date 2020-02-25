@@ -13,13 +13,11 @@ class MetalHeadExtream < DiceBot
     super
   end
 
-  def gameName
-    'メタルヘッドエクストリーム'
-  end
+  # ゲームシステム名
+  NAME = 'メタルヘッドエクストリーム'
 
-  def gameType
-    "MetalHeadExtream"
-  end
+  # ダイスボットの識別子
+  ID = 'MetalHeadExtream'
 
   def getHelpMessage
     return <<MESSAGETEXT

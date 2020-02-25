@@ -6,13 +6,11 @@ class ShinkuuGakuen < DiceBot
     'RL.*', 'SW.*', 'LS.*', 'SS.*', 'SP.*', 'AX.*', 'CL.*', 'BW.*', 'MA.*', 'BX.*', 'PR.*', 'ST.*'
   ])
 
-  def gameName
-    '真空学園'
-  end
+  # ゲームシステム名
+  NAME = '真空学園'
 
-  def gameType
-    "ShinkuuGakuen"
-  end
+  # ダイスボットの識別子
+  ID = 'ShinkuuGakuen'
 
   def getHelpMessage
     return <<MESSAGETEXT

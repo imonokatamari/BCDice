@@ -10,13 +10,11 @@ class MeikyuDays < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '迷宮デイズ'
-  end
+  # ゲームシステム名
+  NAME = '迷宮デイズ'
 
-  def gameType
-    "MeikyuDays"
-  end
+  # ダイスボットの識別子
+  ID = 'MeikyuDays'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

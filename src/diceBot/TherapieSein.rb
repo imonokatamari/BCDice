@@ -7,13 +7,11 @@ class TherapieSein < DiceBot
     super
   end
 
-  def gameName
-    '青春疾患セラフィザイン'
-  end
+  # ゲームシステム名
+  NAME = '青春疾患セラフィザイン'
 
-  def gameType
-    "TherapieSein"
-  end
+  # ダイスボットの識別子
+  ID = 'TherapieSein'
 
   def getHelpMessage
     return <<MESSAGETEXT

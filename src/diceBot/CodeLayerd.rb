@@ -3,13 +3,11 @@
 class CodeLayerd < DiceBot
   setPrefixes(['\d*CL[@\d]*.*'])
 
-  def gameName
-    'コード：レイヤード'
-  end
+  # ゲームシステム名
+  NAME = 'コード：レイヤード'
 
-  def gameType
-    "CodeLayerd"
-  end
+  # ダイスボットの識別子
+  ID = 'CodeLayerd'
 
   def getHelpMessage
     return <<MESSAGETEXT

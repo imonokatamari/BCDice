@@ -13,13 +13,12 @@ class Alshard < SRS
 
   # ゲームシステム名を返す
   # @return [String]
-  def gameName
-    'アルシャード'
-  end
+  # ゲームシステム名
+  NAME = 'アルシャード'
 
   # ゲームシステム識別子を返す
   # @return [String]
-  def gameType
-    'Alshard'
-  end
+  # ダイスボットの識別子
+  ID = 'Alshard'
+
 end

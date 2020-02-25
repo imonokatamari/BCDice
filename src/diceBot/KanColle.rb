@@ -8,13 +8,11 @@ class KanColle < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    '艦これRPG'
-  end
+  # ゲームシステム名
+  NAME = '艦これRPG'
 
-  def gameType
-    "KanColle"
-  end
+  # ダイスボットの識別子
+  ID = 'KanColle'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

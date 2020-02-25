@@ -21,13 +21,11 @@ class BarnaKronika < DiceBot
     end
   end
 
-  def gameName
-    'バルナ・クロニカ'
-  end
+  # ゲームシステム名
+  NAME = 'バルナ・クロニカ'
 
-  def gameType
-    "BarnaKronika"
-  end
+  # ダイスボットの識別子
+  ID = 'BarnaKronika'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

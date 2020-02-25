@@ -8,13 +8,11 @@ class Skynauts < DiceBot
     @fractionType = "omit"; # 端数の処理 ("omit"=切り捨て, "roundUp"=切り上げ, "roundOff"=四捨五入)
   end
 
-  def gameName
-    '歯車の塔の探空士'
-  end
+  # ゲームシステム名
+  NAME = '歯車の塔の探空士'
 
-  def gameType
-    "Skynauts"
-  end
+  # ダイスボットの識別子
+  ID = 'Skynauts'
 
   def getHelpMessage
     return <<MESSAGETEXT

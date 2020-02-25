@@ -9,13 +9,11 @@ class ScreamHighSchool < GardenOrder
     'DC(SL|BL|IM|BR|RF|EL).+'
   ])
 
-  def gameName
-    'スクリームハイスクール'
-  end
+  # ゲームシステム名
+  NAME = 'スクリームハイスクール'
 
-  def gameType
-    "ScreamHighSchool"
-  end
+  # ダイスボットの識別子
+  ID = 'ScreamHighSchool'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

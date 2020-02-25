@@ -3,13 +3,11 @@
 class GeishaGirlwithKatana < DiceBot
   setPrefixes(['GK(#\d+)?', 'GL'])
 
-  def gameName
-    'ゲイシャ・ガール・ウィズ・カタナ'
-  end
+  # ゲームシステム名
+  NAME = 'ゲイシャ・ガール・ウィズ・カタナ'
 
-  def gameType
-    "GeishaGirlwithKatana"
-  end
+  # ダイスボットの識別子
+  ID = 'GeishaGirlwithKatana'
 
   def getHelpMessage
     return <<MESSAGETEXT

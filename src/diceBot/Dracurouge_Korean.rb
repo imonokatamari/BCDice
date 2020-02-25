@@ -6,13 +6,11 @@ class Dracurouge_Korean < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    '드라크루주'
-  end
+  # ゲームシステム名
+  NAME = '드라크루주'
 
-  def gameType
-    "Dracurouge:Korean"
-  end
+  # ダイスボットの識別子
+  ID = 'Dracurouge:Korean'
 
   def getHelpMessage
     return <<MESSAGETEXT

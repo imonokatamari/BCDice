@@ -15,13 +15,11 @@ class TwilightGunsmoke < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'トワイライト・ガンスモーク'
-  end
+  # ゲームシステム名
+  NAME = 'トワイライト・ガンスモーク'
 
-  def gameType
-    "TwilightGunsmoke"
-  end
+  # ダイスボットの識別子
+  ID = 'TwilightGunsmoke'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

@@ -9,13 +9,11 @@ class EarthDawn < DiceBot
     @sortType = 1
   end
 
-  def gameName
-    'アースドーン'
-  end
+  # ゲームシステム名
+  NAME = 'アースドーン'
 
-  def gameType
-    "EarthDawn"
-  end
+  # ダイスボットの識別子
+  ID = 'EarthDawn'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

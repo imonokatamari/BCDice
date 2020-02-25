@@ -12,13 +12,11 @@ class Garako < DiceBot
     super
   end
 
-  def gameName
-    'ガラコと破界の塔'
-  end
+  # ゲームシステム名
+  NAME = 'ガラコと破界の塔'
 
-  def gameType
-    "Garako"
-  end
+  # ダイスボットの識別子
+  ID = 'Garako'
 
   def getHelpMessage
     return <<MESSAGETEXT

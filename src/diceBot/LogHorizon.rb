@@ -8,13 +8,11 @@ class LogHorizon < DiceBot
     @d66Type = 1
   end
 
-  def gameName
-    'ログ・ホライズン'
-  end
+  # ゲームシステム名
+  NAME = 'ログ・ホライズン'
 
-  def gameType
-    "LogHorizon"
-  end
+  # ダイスボットの識別子
+  ID = 'LogHorizon'
 
   def getHelpMessage
     return <<MESSAGETEXT

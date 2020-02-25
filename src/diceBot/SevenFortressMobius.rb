@@ -10,13 +10,11 @@ class SevenFortressMobius < DiceBot
     @nightWizardDiceBot = NightWizard.new
   end
 
-  def gameName
-    'セブン＝フォートレス メビウス'
-  end
+  # ゲームシステム名
+  NAME = 'セブン＝フォートレス メビウス'
 
-  def gameType
-    "SevenFortressMobius"
-  end
+  # ダイスボットの識別子
+  ID = 'SevenFortressMobius'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

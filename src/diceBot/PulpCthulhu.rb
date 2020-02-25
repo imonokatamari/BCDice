@@ -5,13 +5,11 @@ require "diceBot/Cthulhu7th"
 class PulpCthulhu < Cthulhu7th
   setPrefixes(['CC\(\d+\)', 'CC.*', 'CBR\(\d+,\d+\)', 'FAR.*', 'BMR', 'BMS', 'FCE', 'PH', 'MA', 'IT'])
 
-  def gameName
-    'パルプ・クトゥルフ'
-  end
+  # ゲームシステム名
+  NAME = 'パルプ・クトゥルフ'
 
-  def gameType
-    "PulpCthulhu"
-  end
+  # ダイスボットの識別子
+  ID = 'PulpCthulhu'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

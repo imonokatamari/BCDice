@@ -10,13 +10,11 @@ class ShinobiGami < DiceBot
     @d66Type = 2
   end
 
-  def gameName
-    'シノビガミ'
-  end
+  # ゲームシステム名
+  NAME = 'シノビガミ'
 
-  def gameType
-    "ShinobiGami"
-  end
+  # ダイスボットの識別子
+  ID = 'ShinobiGami'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

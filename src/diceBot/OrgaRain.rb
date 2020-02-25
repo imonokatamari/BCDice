@@ -10,13 +10,11 @@ class OrgaRain < DiceBot
     '(\d+)?OR([0-9])?([0-9])?([0-9])?([0-9])?([0-9])?([0-9])?'
   ])
 
-  def gameName
-    '在りて遍くオルガレイン'
-  end
+  # ゲームシステム名
+  NAME = '在りて遍くオルガレイン'
 
-  def gameType
-    "OrgaRain"
-  end
+  # ダイスボットの識別子
+  ID = 'OrgaRain'
 
   def getHelpMessage
     return <<MESSAGETEXT

@@ -9,13 +9,11 @@ class TokumeiTenkousei < DiceBot
     @sameDiceRerollType = 2 # ゾロ目で振り足しのロール種別(0=判定のみ, 1=ダメージのみ, 2=両方)
   end
 
-  def gameName
-    '特命転攻生'
-  end
+  # ゲームシステム名
+  NAME = '特命転攻生'
 
-  def gameType
-    "TokumeiTenkousei"
-  end
+  # ダイスボットの識別子
+  ID = 'TokumeiTenkousei'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT

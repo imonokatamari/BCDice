@@ -13,13 +13,11 @@ class ChaosFlare < DiceBot
     end
   end
 
-  def gameName
-    'カオスフレア'
-  end
+  # ゲームシステム名
+  NAME = 'カオスフレア'
 
-  def gameType
-    "Chaos Flare"
-  end
+  # ダイスボットの識別子
+  ID = 'Chaos Flare'
 
   def getHelpMessage
     return <<INFO_MESSAGE_TEXT
