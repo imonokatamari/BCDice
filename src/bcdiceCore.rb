@@ -526,7 +526,7 @@ class BCDice
 
     sleepForIrc 2
 
-    @diceBot.getHelpMessage.lines.each_slice(5) do |lines|
+    @diceBot.help_message.lines.each_slice(5) do |lines|
       lines.each(&send_to_sender)
       sleepForIrc 1
     end

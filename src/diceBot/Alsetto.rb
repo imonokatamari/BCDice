@@ -1,21 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Alsetto < DiceBot
-  setPrefixes(['\d+AL(C|G)?(\d+)?(x|\*)\d+', '\d+ALC?(\d+)?'])
-
-  def initialize
-    super
-    @sortType = 1 # ダイスのソート有
-  end
+  # ダイスボットの識別子
+  ID = 'Alsetto'
 
   # ゲームシステム名
   NAME = '詩片のアルセット'
 
-  # ダイスボットの識別子
-  ID = 'Alsetto'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・成功判定：nAL[m]　　　　・トライアンフ無し：nALC[m]
 ・命中判定：nAL[m]*p　　　・トライアンフ無し：nALC[m]*p
 ・命中判定（ガンスリンガーの根源詩）：nALG[m]*p
@@ -38,6 +31,12 @@ ALGコマンドは「2以下」でトライアンフ処理を行います。
 ・7AL2x10 → 7d6で目標値2、攻撃力10の命中判定。
 ・8ALC4x5 → 8d6で目標値4、攻撃力5、トライアンフ無しの命中判定。
 MESSAGETEXT
+
+  setPrefixes(['\d+AL(C|G)?(\d+)?(x|\*)\d+', '\d+ALC?(\d+)?'])
+
+  def initialize
+    super
+    @sortType = 1 # ダイスのソート有
   end
 
   def rollDiceCommand(command)

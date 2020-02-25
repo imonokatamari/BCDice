@@ -1,23 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Airgetlamh < DiceBot
-  def initialize
-    super
-    @sortType = 1 # ダイスのソート有
-  end
-
-  setPrefixes([
-    ['(\d+)?A(A|L)(\d+)?((x|\*)(\d+)(\+(\d+))?)?(C(\d+))?']
-  ])
+  # ダイスボットの識別子
+  ID = 'Airgetlamh'
 
   # ゲームシステム名
   NAME = '朱の孤塔のエアゲトラム'
 
-  # ダイスボットの識別子
-  ID = 'Airgetlamh'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 【Reg2.0『THE ANSWERER』～】
 ・調査判定（成功数を表示）：[n]AA[m]
 ・命中判定（ダメージ表示）：[n]AA[m]*p[+t][Cx]
@@ -44,6 +35,14 @@ class Airgetlamh < DiceBot
 ・9aa5*10C2 → 9d10で目標値5、威力10、クリティカル値2の命中判定。
 ・15AAx4c0 → 15d10で目標値6、威力4、クリティカル無しの命中判定。
 MESSAGETEXT
+
+  setPrefixes([
+    ['(\d+)?A(A|L)(\d+)?((x|\*)(\d+)(\+(\d+))?)?(C(\d+))?']
+  ])
+
+  def initialize
+    super
+    @sortType = 1 # ダイスのソート有
   end
 
   def rollDiceCommand(command)
