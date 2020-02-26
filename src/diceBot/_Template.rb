@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class Template < DiceBot
-  # ダイスボットの識別子
+  # ゲームシステムの識別子
   ID = 'SystemID'
 
   # ゲームシステム名

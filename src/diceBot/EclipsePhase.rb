@@ -1,21 +1,15 @@
 # -*- coding: utf-8 -*-
 
 class EclipsePhase < DiceBot
-  def initialize
-    super
-  end
+  # ゲームシステムの識別子
+  ID = 'EclipsePhase'
 
   # ゲームシステム名
   NAME = 'エクリプス・フェイズ'
 
-  # ダイスボットの識別子
-  ID = 'EclipsePhase'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
-1D100<=m 方式の判定で成否、クリティカル・ファンブルを自動判定
-INFO_MESSAGE_TEXT
-  end
+  # ダイスボットの使い方
+  HELP_MESSAGE =
+    '1D100<=m 方式の判定で成否、クリティカル・ファンブルを自動判定'
 
   def check_1D100(total_n, _dice_n, signOfInequality, diff, _dice_cnt, _dice_max, _n1, _n_max)\
     return '' unless signOfInequality == '<='

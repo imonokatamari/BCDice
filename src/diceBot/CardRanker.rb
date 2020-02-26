@@ -1,21 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class CardRanker < DiceBot
-  def initialize
-    super
-    @sendMode = 2
-    @sortType = 1
-    @d66Type = 2
-  end
+  # ゲームシステムの識別子
+  ID = 'CardRanker'
 
   # ゲームシステム名
   NAME = 'カードランカー'
 
-  # ダイスボットの識別子
-  ID = 'CardRanker'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ランダムでモンスターカードを選ぶ (RM)
 特定のモンスターカードを選ぶ (CMxy　x：色、y：番号）
 　白：W、青：U、緑：V、金：G、赤：R、黒：B
@@ -29,6 +22,12 @@ class CardRanker < DiceBot
 学園運命表 (GDT)
 崩壊運命表 (CDT)
 INFO_MESSAGE_TEXT
+
+  def initialize
+    super
+    @sendMode = 2
+    @sortType = 1
+    @d66Type = 2
   end
 
   # ゲーム別成功度判定(2D6)

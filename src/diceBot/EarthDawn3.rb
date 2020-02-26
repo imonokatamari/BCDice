@@ -3,22 +3,14 @@
 require 'diceBot/EarthDawn'
 
 class EarthDawn3 < EarthDawn
-  setPrefixes(['\d+e.*'])
-
-  def initialize
-    super
-    @sendMode = 2
-    @sortType = 1
-  end
+  # ゲームシステムの識別子
+  ID = 'EarthDawn3'
 
   # ゲームシステム名
   NAME = 'アースドーン3版'
 
-  # ダイスボットの識別子
-  ID = 'EarthDawn3'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ステップダイス　(xEn+k)
 ステップx、目標値n(省略可能）、カルマダイスk(D2～D20)でステップダイスをロールします。
 振り足しも自動。
@@ -26,6 +18,13 @@ class EarthDawn3 < EarthDawn
 　　ステップ10、目標値8：10E8
 　　ステップ12、目標値8、カルマダイスD12：10E8+1D6
 INFO_MESSAGE_TEXT
+
+  setPrefixes(['\d+e.*'])
+
+  def initialize
+    super
+    @sendMode = 2
+    @sortType = 1
   end
 
   def rollDiceCommand(command)

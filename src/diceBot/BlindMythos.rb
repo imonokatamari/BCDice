@@ -1,18 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class BlindMythos < DiceBot
-  def initialize
-    super
-  end
+  # ゲームシステムの識別子
+  ID = 'BlindMythos'
 
   # ゲームシステム名
   NAME = 'ブラインド・ミトス'
 
-  # ダイスボットの識別子
-  ID = 'BlindMythos'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定：BMx@y>=z、BMSx@y>=z
   　x:スキルレベル
 　　y:目標難易度（省略可。デフォルト4）
@@ -35,7 +31,6 @@ class BlindMythos < DiceBot
  xyz:守護星ナンバーを指定
  例）RP123　RP258
 MESSAGETEXT
-  end
 
   def rollDiceCommand(command)
     debug("rollDiceCommand Begin")

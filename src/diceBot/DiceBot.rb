@@ -4,7 +4,7 @@ class DiceBot
   # 空の接頭辞（反応するコマンド）
   EMPTY_PREFIXES_PATTERN = /(^|\s)(S)?()(\s|$)/i.freeze
 
-  # ダイスボットの識別子
+  # ゲームシステムの識別子
   ID = 'DiceBot'.freeze
 
   # ゲームシステム名

@@ -1,6 +1,20 @@
 # -*- coding: utf-8 -*-
 
 class EndBreaker < DiceBot
+  # ゲームシステムの識別子
+  ID = 'EndBreaker'
+
+  # ゲームシステム名
+  NAME = 'エンドブレイカー'
+
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
+・判定 (nEB)
+  n個のD6を振る判定。ダブルトリガー発動で自動振り足し。
+・各種表
+  ・生死不明表 (LDUT)
+MESSAGETEXT
+
   setPrefixes(['\d+EB', 'LDUT'])
 
   def initialize
@@ -8,21 +22,6 @@ class EndBreaker < DiceBot
 
     @sendMode = 2
     @d66Type = 1
-  end
-
-  # ゲームシステム名
-  NAME = 'エンドブレイカー'
-
-  # ダイスボットの識別子
-  ID = 'EndBreaker'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
-・判定 (nEB)
-  n個のD6を振る判定。ダブルトリガー発動で自動振り足し。
-・各種表
-  ・生死不明表 (LDUT)
-MESSAGETEXT
   end
 
   def rollDiceCommand(command)

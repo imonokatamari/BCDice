@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
 
 class Arianrhod < DiceBot
+  # ゲームシステムの識別子
+  ID = 'Arianrhod'
+
+  # ゲームシステム名
+  NAME = 'アリアンロッド'
+
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
+・クリティカル、ファンブルの自動判定を行います。(クリティカル時の追加ダメージも表示されます)
+・D66ダイスあり
+INFO_MESSAGE_TEXT
+
   def initialize
     super
     @sendMode = 2
     @sortType = 1
     @d66Type = 1
-  end
-
-  # ゲームシステム名
-  NAME = 'アリアンロッド'
-
-  # ダイスボットの識別子
-  ID = 'Arianrhod'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
-・クリティカル、ファンブルの自動判定を行います。(クリティカル時の追加ダメージも表示されます)
-・D66ダイスあり
-INFO_MESSAGE_TEXT
   end
 
   def check_2D6(total_n, dice_n, signOfInequality, diff, dice_cnt, dice_max, n1, n_max) # ゲーム別成功度判定(2D6)

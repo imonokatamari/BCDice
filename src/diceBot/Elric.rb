@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Elric < DiceBot
+  # ゲームシステムの識別子
+  ID = 'Elric!'
+
   # ゲームシステム名
   NAME = 'エルリック！'
 
-  # ダイスボットの識別子
-  ID = 'Elric!'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
-貫通、クリティカル、ファンブルの自動判定を行います。
-INFO_MESSAGE_TEXT
-  end
+  # ダイスボットの使い方
+  HELP_MESSAGE = "貫通、クリティカル、ファンブルの自動判定を行います。\n"
 
   # ゲーム別成功度判定(1d100)
   def check_1D100(total_n, _dice_n, signOfInequality, diff, _dice_cnt, _dice_max, _n1, _n_max)

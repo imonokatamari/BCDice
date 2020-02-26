@@ -1,23 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Cthulhu7th < DiceBot
-  setPrefixes(['CC\(\d+\)', 'CC.*', 'CBR\(\d+,\d+\)', 'FAR.*', 'BMR', 'BMS', 'FCL', 'FCM', 'PH', 'MA'])
-
-  def initialize
-    # $isDebug = true
-    super
-
-    @bonus_dice_range = (-2..2)
-  end
+  # ゲームシステムの識別子
+  ID = 'Cthulhu7th'
 
   # ゲームシステム名
   NAME = '新クトゥルフ'
 
-  # ダイスボットの識別子
-  ID = 'Cthulhu7th'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ※コマンドは入力内容の前方一致で検出しています。
 ・判定　CC(x)<=（目標値）
 　x：ボーナス・ペナルティダイス (2～－2)。省略可。
@@ -47,6 +38,14 @@ class Cthulhu7th < DiceBot
 　・プッシュ時のキャスティング・ロール（Casting Roll）の失敗表
 　　強力でない呪文の場合　FCL／強力な呪文の場合　FCM
 INFO_MESSAGE_TEXT
+
+  setPrefixes(['CC\(\d+\)', 'CC.*', 'CBR\(\d+,\d+\)', 'FAR.*', 'BMR', 'BMS', 'FCL', 'FCM', 'PH', 'MA'])
+
+  def initialize
+    # $isDebug = true
+    super
+
+    @bonus_dice_range = (-2..2)
   end
 
   def rollDiceCommand(command)

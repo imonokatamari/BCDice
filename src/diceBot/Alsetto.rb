@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class Alsetto < DiceBot
-  # ダイスボットの識別子
+  # ゲームシステムの識別子
   ID = 'Alsetto'
 
   # ゲームシステム名

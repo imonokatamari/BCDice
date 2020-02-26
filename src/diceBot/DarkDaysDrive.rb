@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class DarkDaysDrive < DiceBot
-  def initialize
-    super
-    @d66Type = 2
-  end
+  # ゲームシステムの識別子
+  ID = 'DarkDaysDrive'
 
   # ゲームシステム名
   NAME = 'ダークデイズドライブ'
 
-  # ダイスボットの識別子
-  ID = 'DarkDaysDrive'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ・判定
 スペシャル／ファンブル／成功／失敗を判定
 ・各種表
@@ -43,6 +38,10 @@ IA イケメンアクション決定表
  IAJ 超自然
 ・D66ダイスあり
 INFO_MESSAGE_TEXT
+
+  def initialize
+    super
+    @d66Type = 2
   end
 
   # ゲーム別成功度判定(2D6)

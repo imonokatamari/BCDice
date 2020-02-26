@@ -1,21 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class DeadlineHeroes < DiceBot
-  setPrefixes([
-    'DLH\\d+([\\+\\-]\\d+)*',
-    'DC(L|S|C)\d+',
-    'RNC[JO]',
-    'HNC'
-  ])
+  # ゲームシステムの識別子
+  ID = 'DeadlineHeroes'
 
   # ゲームシステム名
   NAME = 'デッドラインヒーローズ'
 
-  # ダイスボットの識別子
-  ID = 'DeadlineHeroes'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ・行為判定（DLHx）
 　x：成功率
 　例）DLH80
@@ -31,7 +24,13 @@ class DeadlineHeroes < DiceBot
 ・ヒーローネームチャート（HNC）
 ・リアルネームチャート　日本（RNCJ）、海外（RNCO）
 INFO_MESSAGE_TEXT
-  end
+
+  setPrefixes([
+    'DLH\\d+([\\+\\-]\\d+)*',
+    'DC(L|S|C)\d+',
+    'RNC[JO]',
+    'HNC'
+  ])
 
   def rollDiceCommand(command)
     case command

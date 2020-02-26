@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class Airgetlamh < DiceBot
-  # ダイスボットの識別子
+  # ゲームシステムの識別子
   ID = 'Airgetlamh'
 
   # ゲームシステム名

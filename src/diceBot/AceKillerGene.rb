@@ -3,7 +3,7 @@
 require 'diceBot/GardenOrder'
 
 class AceKillerGene < GardenOrder
-  # ダイスボットの識別子
+  # ゲームシステムの識別子
   ID = 'AceKillerGene'
 
   # ゲームシステム名

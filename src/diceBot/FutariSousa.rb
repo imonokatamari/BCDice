@@ -1,27 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class FutariSousa < DiceBot
-  def initialize
-    super
-    @sendMode = 2
-    @d66Type = 2
-
-    @success_threshold = 4 # 成功の目標値（固定）
-    @special_dice = 6 # スペシャルとなる出目（ダイスの種別によらず固定）
-  end
-
-  setPrefixes(
-    ['(\d+)?DT', '(\d+)?AS', 'SHRD', 'SHFM', 'SHBT', 'SHPI', 'SHEG', 'SHWP', 'SHDS', 'SHFT', 'SHIN', 'SHEM', 'EVS', 'EVW', 'EVN', 'EVC', 'EVV', 'OBT', 'ACT', 'EWT', 'WMT', 'BGDD', 'BGDG', 'BGDM', 'BGAJ', 'BGAP', 'BGAI', 'HT', 'BT', 'GRT', 'MIT', 'JBT66', 'JBT10', 'FST66', 'FST10', 'FLT66', 'FLT10', 'LDT66', 'LDT10', 'NCT66', 'NCT10',]
-  )
+  # ゲームシステムの識別子
+  ID = 'FutariSousa'
 
   # ゲームシステム名
   NAME = 'フタリソウサ'
 
-  # ダイスボットの識別子
-  ID = 'FutariSousa'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定用コマンド
 探偵用：【DT】…10面ダイスを2つ振って判定します。『有利』なら【3DT】、『不利』なら【1DT】を使います。
 助手用：【AS】…6面ダイスを2つ振って判定します。『有利』なら【3AS】、『不利』なら【1AS】を使います。
@@ -44,7 +31,19 @@ class FutariSousa < DiceBot
 感情表A／B　　FLT66・FLT10　　好きなもの／嫌いなもの表A・B　LDT66・LDT10
 呼び名表A・B　NCT66・NCT10
 MESSAGETEXT
+
+  def initialize
+    super
+    @sendMode = 2
+    @d66Type = 2
+
+    @success_threshold = 4 # 成功の目標値（固定）
+    @special_dice = 6 # スペシャルとなる出目（ダイスの種別によらず固定）
   end
+
+  setPrefixes(
+    ['(\d+)?DT', '(\d+)?AS', 'SHRD', 'SHFM', 'SHBT', 'SHPI', 'SHEG', 'SHWP', 'SHDS', 'SHFT', 'SHIN', 'SHEM', 'EVS', 'EVW', 'EVN', 'EVC', 'EVV', 'OBT', 'ACT', 'EWT', 'WMT', 'BGDD', 'BGDG', 'BGDM', 'BGAJ', 'BGAP', 'BGAI', 'HT', 'BT', 'GRT', 'MIT', 'JBT66', 'JBT10', 'FST66', 'FST10', 'FLT66', 'FLT10', 'LDT66', 'LDT10', 'NCT66', 'NCT10',]
+  )
 
   def changeText(string)
     string

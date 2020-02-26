@@ -1,24 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Cthulhu_ChineseTraditional < DiceBot
-  setPrefixes(['CC(B)?\(\d+\)', 'CC(B)?.*', 'RES(B)?.*', 'CBR(B)?\(\d+,\d+\)'])
-
-  def initialize
-    # $isDebug = true
-    super
-    @special_percentage  = 20
-    @critical_percentage = 1
-    @fumble_percentage   = 1
-  end
+  # ゲームシステムの識別子
+  ID = 'Cthulhu:ChineseTraditional'
 
   # ゲームシステム名
   NAME = '克蘇魯神話'
 
-  # ダイスボットの識別子
-  ID = 'Cthulhu:ChineseTraditional'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 c=爆擊率 ／ f=大失敗值 ／ s=特殊
 
 1d100<=n    c・f・s全關閉（只進行單純數值比較判定）
@@ -53,6 +43,15 @@ x=故障率。擲出骰值x以上時、需在大失敗發生同時輸出（參�
 ・短期瘋期　Short／長期瘋狂　Longer
 
 INFO_MESSAGE_TEXT
+
+  setPrefixes(['CC(B)?\(\d+\)', 'CC(B)?.*', 'RES(B)?.*', 'CBR(B)?\(\d+,\d+\)'])
+
+  def initialize
+    # $isDebug = true
+    super
+    @special_percentage  = 20
+    @critical_percentage = 1
+    @fumble_percentage   = 1
   end
 
   def rollDiceCommand(command)

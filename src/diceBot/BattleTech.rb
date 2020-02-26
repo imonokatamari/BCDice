@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class BattleTech < DiceBot
-  setPrefixes(['\d*SRM\d+.+', '\d*LRM\d+.+', '\d*BT.+', 'CT', 'DW', 'CD\d+'])
-
-  def initialize
-    super
-  end
+  # ゲームシステムの識別子
+  ID = 'BattleTech'
 
   # ゲームシステム名
   NAME = 'バトルテック'
 
-  # ダイスボットの識別子
-  ID = 'BattleTech'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定方法
 　(回数)BT(ダメージ)(部位)+(基本値)>=(目標値)
 　回数は省略時 1固定。
@@ -31,6 +25,11 @@ class BattleTech < DiceBot
 ・DW：転倒後の向き表
 ・CDx：メック戦士意識維持表。ダメージ値xで判定　例）CD3
 MESSAGETEXT
+
+  setPrefixes(['\d*SRM\d+.+', '\d*LRM\d+.+', '\d*BT.+', 'CT', 'DW', 'CD\d+'])
+
+  def initialize
+    super
   end
 
   def changeText(string)

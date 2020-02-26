@@ -1,22 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class EmbryoMachine < DiceBot
-  setPrefixes(['(EM\t+|HLT|MFT|SFT)'])
-
-  def initialize
-    super
-    @sendMode = 2
-    @sortType = 1
-  end
+  # ゲームシステムの識別子
+  ID = 'EmbryoMachine'
 
   # ゲームシステム名
   NAME = 'エムブリオマシン'
 
-  # ダイスボットの識別子
-  ID = 'EmbryoMachine'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ・判定ロール(EMt+m@c#f)
 　目標値t、修正値m、クリティカル値c(省略時は20)、ファンブル値f(省略時は2)で攻撃判定を行います。
 　命中した場合は命中レベルと命中部位も自動出力します。
@@ -26,6 +18,13 @@ class EmbryoMachine < DiceBot
 　・白兵攻撃ファンブル表　MFT
 　・射撃攻撃ファンブル表　SFT
 INFO_MESSAGE_TEXT
+
+  setPrefixes(['(EM\t+|HLT|MFT|SFT)'])
+
+  def initialize
+    super
+    @sendMode = 2
+    @sortType = 1
   end
 
   def changeText(string)

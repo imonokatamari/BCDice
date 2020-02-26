@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class Elysion < DiceBot
-  def initialize
-    super
-    @d66Type = 2
-  end
+  # ゲームシステムの識別子
+  ID = 'Elysion'
 
   # ゲームシステム名
   NAME = 'エリュシオン'
 
-  # ダイスボットの識別子
-  ID = 'Elysion'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定（ELn+m）
 　能力値 n 、既存の達成値 m（アシストの場合）
 例）EL3　：能力値３で判定。
@@ -42,6 +37,10 @@ class Elysion < DiceBot
 　1コマンドでデート判定を行い、デート表の結果を表示します。
 ・D66ダイスあり
 MESSAGETEXT
+
+  def initialize
+    super
+    @d66Type = 2
   end
 
   #  教室 R:classRoom／購買 S:Shop／部室 B:Box／生徒会室 C:Council／学生寮 D:Dormitory／図書館 I:lIbrary／屋上 F:rooF／

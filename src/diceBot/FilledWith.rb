@@ -1,22 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class FilledWith < DiceBot
-  setPrefixes(['3FW.*', '[\+\-\d]*-3FW.*', 'LOT[NP]', 'HST', 'COOK[1-8]', 'RAND.*', 'RENC.*', 'RED.*', 'TRS.*', 'TRAP[ENHL]', 'ROP[ENHL]'])
-
-  def initialize
-    super
-    @d66Type = 1; # d66の差し替え
-    # @fractionType = "omit";     #端数の処理 ("omit"=切り捨て, "roundUp"=切り上げ, "roundOff"=四捨五入)
-  end
+  # ゲームシステムの識別子
+  ID = 'FilledWith'
 
   # ゲームシステム名
   NAME = 'フィルトウィズ'
 
-  # ダイスボットの識別子
-  ID = 'FilledWith'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定 (3FW@x#y<=z or z-3FW@x#y)
  3個の6面ダイスを振る判定。
  @x:xにクリティカル値を入力。省略可。(省略時クリティカル値4)
@@ -46,6 +38,13 @@ class FilledWith < DiceBot
  ±x:xに財宝ランク修正値を入力。省略可。
 ・迷宮追加オプション表(ROPd)
 MESSAGETEXT
+
+  setPrefixes(['3FW.*', '[\+\-\d]*-3FW.*', 'LOT[NP]', 'HST', 'COOK[1-8]', 'RAND.*', 'RENC.*', 'RED.*', 'TRS.*', 'TRAP[ENHL]', 'ROP[ENHL]'])
+
+  def initialize
+    super
+    @d66Type = 1; # d66の差し替え
+    # @fractionType = "omit";     #端数の処理 ("omit"=切り捨て, "roundUp"=切り上げ, "roundOff"=四捨五入)
   end
 
   def rollDiceCommand(command)
