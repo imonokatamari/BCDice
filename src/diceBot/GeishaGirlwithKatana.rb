@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class GeishaGirlwithKatana < DiceBot
-  setPrefixes(['GK(#\d+)?', 'GL'])
+  # ゲームシステムの識別子
+  ID = 'GeishaGirlwithKatana'
 
   # ゲームシステム名
   NAME = 'ゲイシャ・ガール・ウィズ・カタナ'
 
-  # ダイスボットの識別子
-  ID = 'GeishaGirlwithKatana'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ・判定 (GK#n)
   役やチョムバを含めて1回分のダイスロールを判定します。
 　役は　（通常判定）／（戦闘時）　の順で両方出力されます。
@@ -22,7 +20,8 @@ class GeishaGirlwithKatana < DiceBot
   GKコマンドを打ち間違えてチョムバするを想定してます。
 　例）GL
 MESSAGETEXT
-  end
+
+  setPrefixes(['GK(#\d+)?', 'GL'])
 
   def rollDiceCommand(command)
     output = nil

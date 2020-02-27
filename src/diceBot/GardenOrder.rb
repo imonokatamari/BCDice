@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
 
 class GardenOrder < DiceBot
-  setPrefixes([
-    'GO(\-?\d+)(\/\d+)?(@\d+)?',
-    'DC(SL|BL|IM|BR|RF|EL).+'
-  ])
+  # ゲームシステムのの識別子
+  ID = 'GardenOrder'
 
   # ゲームシステム名
   NAME = 'ガーデンオーダー'
 
-  # ダイスボットの識別子
-  ID = 'GardenOrder'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 ・基本判定
 　GOx/y@z　x：成功率、y：連続攻撃回数（省略可）、z：クリティカル値（省略可）
 　（連続攻撃では1回の判定のみが実施されます）
@@ -24,7 +19,11 @@ class GardenOrder < DiceBot
 　y：ダメージ
 　例）DCSL7　DCEL22
 INFO_MESSAGE_TEXT
-  end
+
+  setPrefixes([
+    'GO(\-?\d+)(\/\d+)?(@\d+)?',
+    'DC(SL|BL|IM|BR|RF|EL).+'
+  ])
 
   def rollDiceCommand(command)
     case command

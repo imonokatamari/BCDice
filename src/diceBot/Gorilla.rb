@@ -1,32 +1,22 @@
 # -*- coding: utf-8 -*-
 
 class Gorilla < DiceBot
-  setPrefixes(['G.*'])
-
-  def initialize
-    # $isDebug = true
-    super()
-  end
+  # ゲームシステムの識別子
+  ID = 'Gorilla'
 
   # ゲームシステム名
   NAME = 'ゴリラTRPG'
 
-  # ダイスボットの識別子
-  ID = 'Gorilla'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 2D6ロール時のゴリティカル自動判定を行います。
 
 G = 2D6のショートカット
 
 例) G>=7 : 2D6して7以上なら成功
 MESSAGETEXT
-  end
 
-  def isGetOriginalMessage
-    false
-  end
+  setPrefixes(['G.*'])
 
   def changeText(string)
     string = string.gsub(/^(S)?G/i) { "#{Regexp.last_match(1)}2D6" }

@@ -1,6 +1,24 @@
 # -*- coding: utf-8 -*-
 
 class GranCrest < DiceBot
+  # ゲームシステムの識別子
+  ID = 'GranCrest'
+
+  # ゲームシステム名
+  NAME = 'グランクレスト'
+
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
+・2D6の目標値判定でクリティカル処理
+　例）3d6>=19 3d6+5>=24
+・邂逅表（MT）
+・感情表（-FT）
+　ポジティブ感情表（PFT）、ネガティブ感情表（NFT）
+・国特徴表（-CT）
+　カテゴリー表（CT）、地形表（TCT）、産業表（ICT）、人物表（PCT）
+　組織表（OCT）、拠点表（BCT）、文化表（CCT）
+MESSAGETEXT
+
   setPrefixes([
     'MT',
     'PFT',
@@ -20,25 +38,6 @@ class GranCrest < DiceBot
     @sortType = 1
     @d66Type = 1
     @fractionType = "omit"
-  end
-
-  # ゲームシステム名
-  NAME = 'グランクレスト'
-
-  # ダイスボットの識別子
-  ID = 'GranCrest'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
-・2D6の目標値判定でクリティカル処理
-　例）3d6>=19 3d6+5>=24
-・邂逅表（MT）
-・感情表（-FT）
-　ポジティブ感情表（PFT）、ネガティブ感情表（NFT）
-・国特徴表（-CT）
-　カテゴリー表（CT）、地形表（TCT）、産業表（ICT）、人物表（PCT）
-　組織表（OCT）、拠点表（BCT）、文化表（CCT）
-MESSAGETEXT
   end
 
   # ゲーム別成功度判定(2D6)

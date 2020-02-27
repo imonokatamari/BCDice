@@ -1,27 +1,22 @@
 # -*- coding: utf-8 -*-
 
 class GoldenSkyStories < DiceBot
-  setPrefixes(['geta'])
-
-  def initialize
-    super
-  end
+  # ゲームシステムの識別子
+  ID = 'GoldenSkyStories'
 
   # ゲームシステム名
   NAME = 'ゆうやけこやけ'
 
-  # ダイスボットの識別子
-  ID = 'GoldenSkyStories'
-
-  def getHelpMessage
-    return <<MESSAGETEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<MESSAGETEXT
 ※「ゆうやけこやけ」はダイスロールを使用しないシステムです。
 ※このダイスボットは部屋のシステム名表示用となります。
 
 ・下駄占い (GETA)
   あーしたてんきになーれ
 MESSAGETEXT
-  end
+
+  setPrefixes(['geta'])
 
   def isGetOriginalMessage
     true

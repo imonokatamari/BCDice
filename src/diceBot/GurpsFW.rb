@@ -4,40 +4,14 @@
 # Last update 2013/11/07
 
 class GurpsFW < DiceBot
-  setPrefixes([
-    'CRT',
-    'HCRT',
-    'FMB',
-    'MFMB',
-    'HIT',
-    'FEAR((\+)?\d*)',
-    'REACT((\+|\-)?\d*)',
-    'TRAP(E|N|H|L)',
-    'TRS((E|N|H|L)\d+)((\+|\-)?\d*)',
-    'RAND(E|N|H|L)[1-6]?',
-    'RENC(E|N|H|L)[1-6]?',
-    'AREA',
-    'DROP(N)?((\+)?\d)?',
-    'HST',
-    'KHST',
-    'RANDOP',
-    'LOT(N|P)'
-  ])
-
-  def initialize
-    super
-    @sendMode = 2
-    @d66Type = 1
-  end
+  # ゲームシステムの識別子
+  ID = 'GurpsFW'
 
   # ゲームシステム名
   NAME = 'ガープスフィルトウィズ'
 
-  # ダイスボットの識別子
-  ID = 'GurpsFW'
-
-  def getHelpMessage
-    return <<INFO_MESSAGE_TEXT
+  # ダイスボットの使い方
+  HELP_MESSAGE = <<INFO_MESSAGE_TEXT
 --GURPS汎用コマンド----------
 ・判定においてクリティカル・ファンブルの自動判別、成功度の自動計算。(3d6<=目標値)
  ・祝福等のダイス目にかかる修正は「3d6-1<=目標値」といった記述で計算されます。
@@ -72,6 +46,31 @@ class GurpsFW < DiceBot
 ・地形決定表(AREA)
 ・迷宮追加オプション表(RANDOP)
 INFO_MESSAGE_TEXT
+
+  setPrefixes([
+    'CRT',
+    'HCRT',
+    'FMB',
+    'MFMB',
+    'HIT',
+    'FEAR((\+)?\d*)',
+    'REACT((\+|\-)?\d*)',
+    'TRAP(E|N|H|L)',
+    'TRS((E|N|H|L)\d+)((\+|\-)?\d*)',
+    'RAND(E|N|H|L)[1-6]?',
+    'RENC(E|N|H|L)[1-6]?',
+    'AREA',
+    'DROP(N)?((\+)?\d)?',
+    'HST',
+    'KHST',
+    'RANDOP',
+    'LOT(N|P)'
+  ])
+
+  def initialize
+    super
+    @sendMode = 2
+    @d66Type = 1
   end
 
   def dice_command(string, name)
